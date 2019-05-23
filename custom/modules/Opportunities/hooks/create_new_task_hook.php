@@ -36,7 +36,7 @@ class create_new_task_hook
 
         $dbGetSGUser = DBManagerFactory::getInstance();
         $queryGetSGUsers = "select sg.name as name
-                       from erp.securitygroups sg, erp.securitygroups_users sgu, erp.users u
+                       from securitygroups sg, securitygroups_users sgu, users u
                        where sgu.securitygroup_id = sg.id and sgu.user_id = u.id and u.id = '{$engineer_id}'";
         $resultGetSGUsers = $dbGetSGUser->query($queryGetSGUsers);
         $resultGetSGUsersRow = $dbGetSGUser->fetchByAssoc($resultGetSGUsers);
@@ -51,7 +51,7 @@ class create_new_task_hook
 
         $dbGetSGCoordinator = DBManagerFactory::getInstance();
         $queryGetSGCoordinator = "select u.id as id
-                       from erp.securitygroups sg, erp.securitygroups_users sgu, erp.users u
+                       from securitygroups sg, securitygroups_users sgu, users u
                        where sgu.securitygroup_id = sg.id and sgu.user_id = u.id and sg.name = '{$coordinator_sg_name}'";
         $resultGetSGCoordinator = $dbGetSGCoordinator->query($queryGetSGCoordinator);
 
