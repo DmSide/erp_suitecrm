@@ -203,7 +203,7 @@ class create_new_task_hook
             include_once('include/utils/db_utils.php'); // for from_html function
 
             $mail = new SugarPHPMailer();
-            $mail->From = "crm@obermeister.ru";
+            $mail->From = "syserp@obermeister.ru";
             $mail->FromName = "авто информирование";
             $mail->ClearAllRecipients();
             $mail->ClearReplyTos();
@@ -264,7 +264,7 @@ class create_new_task_hook
                 include_once('include/utils/db_utils.php'); // for from_html function
 
                 $mail = new SugarPHPMailer();
-                $mail->From = "crm@obermeister.ru";
+                $mail->From = "syserp@obermeister.ru";
                 $mail->FromName = "авто информирование";
                 $mail->ClearAllRecipients();
                 $mail->ClearReplyTos();
