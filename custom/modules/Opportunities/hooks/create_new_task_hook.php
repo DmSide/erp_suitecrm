@@ -36,7 +36,7 @@ class create_new_task_hook
 
         $dbGetSGUser = DBManagerFactory::getInstance();
         $queryGetSGUsers = "select sg.name as name
-                       from securitygroups sg, securitygroups_users sgu, users u
+                       from suitecrm.securitygroups sg, suitecrm.securitygroups_users sgu, suitecrm.users u
                        where sgu.securitygroup_id = sg.id and sgu.user_id = u.id and u.id = '{$engineer_id}'";
         $resultGetSGUsers = $dbGetSGUser->query($queryGetSGUsers);
         $resultGetSGUsersRow = $dbGetSGUser->fetchByAssoc($resultGetSGUsers);
@@ -51,7 +51,7 @@ class create_new_task_hook
 
         $dbGetSGCoordinator = DBManagerFactory::getInstance();
         $queryGetSGCoordinator = "select u.id as id
-                       from securitygroups sg, securitygroups_users sgu, users u
+                       from suitecrm.securitygroups sg, suitecrm.securitygroups_users sgu, suitecrm.users u
                        where sgu.securitygroup_id = sg.id and sgu.user_id = u.id and sg.name = '{$coordinator_sg_name}'";
         $resultGetSGCoordinator = $dbGetSGCoordinator->query($queryGetSGCoordinator);
 
@@ -95,7 +95,7 @@ class create_new_task_hook
         //***************Get contact_id****************************
         $dbGetContactId = DBManagerFactory::getInstance();
         $queryGetContactId = "SELECT ac.contact_id as contact_id
-                             FROM accounts_contacts ac, accounts_opportunities ao
+                             FROM suitecrm.accounts_contacts ac, suitecrm.accounts_opportunities ao
                              WHERE ac.deleted = 0 and ao.deleted = 0
                              and ac.account_id = ao.account_id 
                              and ao.opportunity_id = '{$bean->id}'";
@@ -169,7 +169,7 @@ class create_new_task_hook
             $GLOBALS['log']->warn('is_need_send_letter_to_engineer');
             $dbGetEmail = DBManagerFactory::getInstance();
             $queryGetEmail = "select ea.email_address as email_address, u.last_name as last_name, u.first_name as first_name  
-                          from email_addresses ea, email_addr_bean_rel ear, users u
+                          from suitecrm.email_addresses ea, suitecrm.email_addr_bean_rel ear, suitecrm.users u
                           WHERE ear.bean_module = 'Users' and ear.deleted = 0 AND ear.bean_id = u.id 
                           and ea.id = ear.email_address_id and u.id = '{$engineer_id}'";
             $resultGetEmail = $dbGetEmail->query($queryGetEmail);
@@ -230,7 +230,7 @@ class create_new_task_hook
             foreach ($coordinator_ids as $coordinator_id) {
                 $dbGetEmail = DBManagerFactory::getInstance();
                 $queryGetEmail = "select ea.email_address as email_address, u.last_name as last_name, u.first_name as first_name  
-                          from email_addresses ea, email_addr_bean_rel ear, users u
+                          from suitecrm.email_addresses ea, suitecrm.email_addr_bean_rel ear, suitecrm.users u
                           WHERE ear.bean_module = 'Users' and ear.deleted = 0 AND ear.bean_id = u.id 
                           and ea.id = ear.email_address_id and u.id = '{$coordinator_id}'";
                 $resultGetEmail = $dbGetEmail->query($queryGetEmail);
@@ -281,6 +281,7 @@ class create_new_task_hook
                 $mail->prepForOutbound();
                 $mail->setMailerForSystem();
                 //Send mail, log if there is error
+                $GLOBALS['log']->fatal($mail->Body);
                 if (!$mail->Send()) {
                     $GLOBALS['log']->fatal("ERROR: Mail sending failed!");
                 }
