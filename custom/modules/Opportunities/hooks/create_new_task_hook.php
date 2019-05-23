@@ -21,9 +21,7 @@ class create_new_task_hook
 
         $sales_stage_ru = $sales[$bean-> sales_stage];
 
-        $is_need_send_letter_to_engineer = $bean->sales_stage == 'Qualification' or
-                                            $bean->sales_stage == 'Needs Analysis' or
-                                            $bean->sales_stage == 'Value Proposition';
+        $is_need_send_letter_to_engineer = $bean->sales_stage == 'Qualification' || $bean->sales_stage == 'Needs Analysis' || $bean->sales_stage == 'Value Proposition';
 
         $is_need_send_letter_to_coordinator = $bean->sales_stage == 'Prospecting';
         $is_need_task_to_coordinator = $bean->sales_stage == 'Prospecting';
