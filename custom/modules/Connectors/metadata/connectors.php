@@ -1,0 +1,47 @@
+<?php
+// created: 2019-05-12 11:33:40
+$connectors = array (
+  'ext_rest_facebook' => 
+  array (
+    'id' => 'ext_rest_facebook',
+    'name' => 'Facebook',
+    'enabled' => true,
+    'directory' => 'modules/Connectors/connectors/sources/ext/rest/facebook',
+    'eapm' => false,
+    'modules' => 
+    array (
+      0 => 'Accounts',
+      1 => 'Contacts',
+      2 => 'Leads',
+    ),
+  ),
+  'ext_rest_insideview' => 
+  array (
+    'id' => 'ext_rest_insideview',
+    'name' => 'InsideView&#169;',
+    'enabled' => true,
+    'directory' => 'modules/Connectors/connectors/sources/ext/rest/insideview',
+    'eapm' => false,
+    'modules' => 
+    array (
+      0 => 'Accounts',
+      1 => 'Contacts',
+      2 => 'Leads',
+      3 => 'Opportunities',
+    ),
+  ),
+  'ext_rest_twitter' => 
+  array (
+    'id' => 'ext_rest_twitter',
+    'name' => 'Twitter',
+    'enabled' => true,
+    'directory' => 'modules/Connectors/connectors/sources/ext/rest/twitter',
+    'eapm' => false,
+    'modules' => 
+    array (
+      0 => 'Accounts',
+      1 => 'Contacts',
+      2 => 'Leads',
+    ),
+  ),
+);

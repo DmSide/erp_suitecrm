@@ -1,0 +1,28 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Documents',
+    'varName' => 'DOCUMENTS',
+    'orderBy' => 'name',
+    'whereClauses' => array (
+),
+    'searchInputs' => array (
+),
+    'searchdefs' => array (
+),
+    'listviewdefs' => array (
+  'FILENAME' => 
+  array (
+    'type' => 'file',
+    'label' => 'LBL_FILENAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DOCUMENT_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

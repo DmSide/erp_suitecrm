@@ -1,0 +1,719 @@
+Fri Apr 12 17:14:35 2019 [29949][-none-][FATAL] User update error: Temp User is not retrieved at ID 1, boolean given
+Fri Apr 12 17:14:35 2019 [29949][-none-][FATAL] Email address save error
+Fri Apr 12 17:15:15 2019 [29948][-none-][FATAL] SECURITY: User authentication for admin failed
+Fri Apr 12 17:15:15 2019 [29948][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.10.44], username[admin]
+Fri Apr 12 22:59:39 2019 [29926][-none-][FATAL] SECURITY: User authentication for admin failed
+Fri Apr 12 22:59:39 2019 [29926][-none-][FATAL] FAILED LOGIN:attempts[1], ip[172.16.31.2], username[admin]
+Fri Apr 12 23:22:57 2019 [30772][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Apr 12 23:22:57 2019 [30772][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ACLRole))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ACLRole))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ACLRole), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('ACLRoles', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('96888aa3-6bf2-7...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Fri Apr 12 23:23:57 2019 [30032][1][FATAL] [ERROR] Failed to remove bean to index
+Fri Apr 12 23:23:57 2019 [30032][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(ACLRole))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(ACLRole))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(ACLRole), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('ACLRoles', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('897e3175-fca4-c...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Fri Apr 26 17:03:16 2019 [17649][1][FATAL] Class Connectors does not exist, unable to rename.
+Fri Apr 26 17:03:16 2019 [17649][1][FATAL] Class Version does not exist, unable to rename.
+Fri Apr 26 17:03:16 2019 [17649][1][FATAL] Class CustomFields does not exist, unable to rename.
+Fri Apr 26 17:03:16 2019 [17649][1][FATAL] Class Audit does not exist, unable to rename.
+Sat Apr 27 15:06:52 2019 [24300][1][FATAL] error loading relationship aos_products_purchases
+Sat Apr 27 15:06:52 2019 [24300][1][FATAL] [ERROR] Failed to remove bean to index
+Sat Apr 27 15:06:52 2019 [24300][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(AOS_Products))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(AOS_Products))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(AOS_Products), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('AOS_Products', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('5adf3fe7-c65c-0...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#13 {main}
+Sat Apr 27 15:25:39 2019 [21922][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl:457 - styleChecked is not set
+Sat Apr 27 16:35:55 2019 [24301][-none-][FATAL] SECURITY: User authentication for admin failed
+Sat Apr 27 16:35:55 2019 [24301][-none-][FATAL] FAILED LOGIN:attempts[1], ip[31.13.145.10], username[admin]
+Sat Apr 27 16:36:26 2019 [24296][-none-][FATAL] SECURITY: User authentication for admin failed
+Sat Apr 27 16:36:26 2019 [24296][-none-][FATAL] FAILED LOGIN:attempts[1], ip[31.13.145.10], username[admin]
+Sat Apr 27 16:36:32 2019 [21928][-none-][FATAL] SECURITY: User authentication for admin failed
+Sat Apr 27 16:36:32 2019 [21928][-none-][FATAL] FAILED LOGIN:attempts[1], ip[31.13.145.10], username[admin]
+Sat Apr 27 16:37:00 2019 [24301][-none-][FATAL] SECURITY: User authentication for admin failed
+Sat Apr 27 16:37:00 2019 [24301][-none-][FATAL] FAILED LOGIN:attempts[1], ip[31.13.145.10], username[admin]
+Sat Apr 27 16:39:53 2019 [24301][-none-][FATAL] SECURITY: User authentication for admin failed
+Sat Apr 27 16:39:53 2019 [24301][-none-][FATAL] FAILED LOGIN:attempts[1], ip[217.118.81.238], username[admin]
+Wed May  1 16:11:32 2019 [2297][-none-][FATAL] SECURITY: User authentication for dmin failed
+Wed May  1 16:11:32 2019 [2297][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.10.44], username[dmin]
+Mon May  6 19:50:27 2019 [7746][1][FATAL] [ERROR] Failed to remove bean to index
+Mon May  6 19:50:27 2019 [7746][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(AOR_Report))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(AOR_Report))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(AOR_Report), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('AOR_Reports', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MVC/Controller/SugarController.php(723): SugarBean->mark_deleted('9c618ca5-d441-b...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_delete()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#11 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#12 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#13 {main}
+Wed May  8 16:58:28 2019 [20557][1][FATAL] Email address save error
+Wed May  8 17:06:02 2019 [23886][1][FATAL] Email address save error
+Sun May 12 10:54:17 2019 [20377][-none-][FATAL] SECURITY: User authentication for admin failed
+Sun May 12 10:54:17 2019 [20377][-none-][FATAL] FAILED LOGIN:attempts[1], ip[172.16.31.2], username[admin]
+Sun May 12 10:54:30 2019 [18938][-none-][FATAL] SECURITY: User authentication for admin failed
+Sun May 12 10:54:30 2019 [18938][-none-][FATAL] FAILED LOGIN:attempts[1], ip[172.16.31.2], username[admin]
+Sun May 12 11:00:28 2019 [20380][1][FATAL] Class Connectors does not exist, unable to rename.
+Sun May 12 11:00:28 2019 [20380][1][FATAL] Class Version does not exist, unable to rename.
+Sun May 12 11:00:28 2019 [20380][1][FATAL] Class CustomFields does not exist, unable to rename.
+Sun May 12 11:00:28 2019 [20380][1][FATAL] Class Audit does not exist, unable to rename.
+Sun May 12 11:05:18 2019 [18936][1][FATAL] Class Connectors does not exist, unable to rename.
+Sun May 12 11:05:18 2019 [18936][1][FATAL] Class Version does not exist, unable to rename.
+Sun May 12 11:05:18 2019 [18936][1][FATAL] Class CustomFields does not exist, unable to rename.
+Sun May 12 11:05:18 2019 [18936][1][FATAL] Class Audit does not exist, unable to rename.
+Sun May 12 17:25:37 2019 [19004][-none-][FATAL] SECURITY: User authentication for  фвьшт failed
+Sun May 12 17:25:37 2019 [19004][-none-][FATAL] FAILED LOGIN:attempts[1], ip[178.76.216.113], username[ фвьшт]
+Sun May 12 17:26:01 2019 [22787][-none-][FATAL] SECURITY: User authentication for admi failed
+Sun May 12 17:26:01 2019 [22787][-none-][FATAL] FAILED LOGIN:attempts[1], ip[178.76.216.113], username[admi]
+Mon May 20 14:34:03 2019 [16883][1][FATAL] [ERROR] Failed to remove bean to index
+Mon May 20 14:34:03 2019 [16883][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(SecurityGroup))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(SecurityGroup))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(SecurityGroup), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('SecurityGroups', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('67220521-0e63-0...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Mon May 20 14:37:00 2019 [16884][1][FATAL] Email address save error
+Mon May 20 14:38:23 2019 [18252][1][FATAL] Email address save error
+Mon May 20 14:40:45 2019 [15820][1][FATAL] Email address save error
+Mon May 20 14:41:01 2019 [16883][1][FATAL] Email address save error
+Mon May 20 14:43:07 2019 [16884][1][FATAL] Email address save error
+Mon May 20 14:43:16 2019 [16884][1][FATAL] Email address save error
+Mon May 20 14:45:44 2019 [16882][1][FATAL] Email address save error
+Mon May 20 14:45:52 2019 [16882][1][FATAL] Email address save error
+Mon May 20 14:50:42 2019 [15820][1][FATAL] Email address save error
+Mon May 20 14:50:56 2019 [15817][1][FATAL] Email address save error
+Mon May 20 14:52:57 2019 [15821][1][FATAL] Email address save error
+Mon May 20 14:53:05 2019 [15821][1][FATAL] Email address save error
+Mon May 20 14:56:24 2019 [15823][1][FATAL] Email address save error
+Mon May 20 14:56:30 2019 [15823][1][FATAL] Email address save error
+Mon May 20 14:58:43 2019 [16884][1][FATAL] Email address save error
+Mon May 20 14:58:51 2019 [16884][1][FATAL] Email address save error
+Mon May 20 15:31:10 2019 [16881][1][FATAL] Caught error: stat(): stat failed for upload/import/status_1.csv
+Mon May 20 15:31:10 2019 [16881][1][FATAL] Caught error: touch(): UploadStream::stream_metadata is not implemented!
+Mon May 20 16:45:35 2019 [15817][1][FATAL] Caught error: stat(): stat failed for upload/import/status_1.csv
+Mon May 20 16:45:35 2019 [15817][1][FATAL] Caught error: touch(): UploadStream::stream_metadata is not implemented!
+Tue May 21 20:43:13 2019 [28263][1][FATAL] Class Connectors does not exist, unable to rename.
+Tue May 21 20:43:13 2019 [28263][1][FATAL] Class Version does not exist, unable to rename.
+Tue May 21 20:43:13 2019 [28263][1][FATAL] Class CustomFields does not exist, unable to rename.
+Tue May 21 20:43:13 2019 [28263][1][FATAL] Class Audit does not exist, unable to rename.
+Wed May 22 12:07:54 2019 [32049][-none-][FATAL] SECURITY: User authentication for  pakhomya.v failed
+Wed May 22 12:07:54 2019 [32049][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.10.44], username[ pakhomya.v]
+Wed May 22 12:08:05 2019 [32051][-none-][FATAL] SECURITY: User authentication for  pakhomya.v failed
+Wed May 22 12:08:05 2019 [32051][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.10.44], username[ pakhomya.v]
+Wed May 22 12:10:05 2019 [32049][-none-][FATAL] SECURITY: User authentication for  pakhomya.v failed
+Wed May 22 12:10:05 2019 [32049][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.10.44], username[ pakhomya.v]
+Wed May 22 16:17:11 2019 [32121][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl:457 - styleChecked is not set
+Thu May 23 10:53:54 2019 [8241][1][FATAL] Caught error: stat(): stat failed for upload/import/status_1.csv
+Thu May 23 10:53:54 2019 [8241][1][FATAL] Caught error: touch(): UploadStream::stream_metadata is not implemented!
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('16b9c15b-a352-c...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('1c8482ff-a175-6...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('20df3702-f022-d...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('312e2764-b82c-c...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('37d5a2b3-c6ce-a...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('472610b7-01fd-f...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('51457776-8931-4...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('5d6ab033-1d48-1...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('65f73550-b215-6...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('7176074f-0b40-5...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('78c40f86-8c2c-2...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('7a08b886-6b84-4...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('80a0e468-0216-d...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('8e4ceb50-e59b-9...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('92150825-ef6c-8...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('a20273fe-f256-c...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('a2b396e1-5b0d-6...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('b6a5d7c1-d693-a...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('c736270b-93d8-2...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:07 2019 [8107][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('dd5ba350-77c4-4...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 10:55:23 2019 [8239][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 10:55:23 2019 [8239][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Account))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Account))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Account), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Accounts', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('eb5a8b07-c2db-f...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 11:24:25 2019 [8234][-none-][FATAL] SECURITY: User authentication for pakhomya.v failed
+Thu May 23 11:24:25 2019 [8234][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.10.44], username[pakhomya.v]
+Thu May 23 17:42:34 2019 [11025][-none-][FATAL] SECURITY: User authentication for admin failed
+Thu May 23 17:42:34 2019 [11025][-none-][FATAL] FAILED LOGIN:attempts[1], ip[192.168.14.66], username[admin]
+Thu May 23 17:54:56 2019 [11044][1][FATAL] Mysqli_query failed.
+Thu May 23 17:54:56 2019 [11044][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( name like 'тестовый%' )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'name' in 'where clause'
+Thu May 23 17:57:21 2019 [11026][1][FATAL] Mysqli_query failed.
+Thu May 23 17:57:21 2019 [11026][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( documents.document_revision_id IN (SELECT document_revisions.id FROM document_revisions
+			           WHERE document_revisions.deleted=0
+				   AND document_revisions.filename LIKE ''1111111111'') )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1111111111'') )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LI' at line 3
+Thu May 23 17:57:40 2019 [11044][1][FATAL] Mysqli_query failed.
+Thu May 23 17:57:40 2019 [11044][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( documents.document_revision_id IN (SELECT document_revisions.id FROM document_revisions
+			           WHERE document_revisions.deleted=0
+				   AND document_revisions.filename LIKE ''тестовый акт'') )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'тестовый акт'') )) AND documents.deleted=0 ORDER BY documents.date_en' at line 3
+Thu May 23 17:58:01 2019 [7101][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 17:58:01 2019 [7101][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(DocumentRevision))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(DocumentRevision))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(DocumentRevision), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('DocumentRevisio...', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/modules/Documents/Document.php(435): SugarBean->mark_deleted('93756a1e-8d24-e...')
+#7 /var/www/html/erp/data/SugarBean.php(5243): Document->mark_relationships_deleted('933850ca-700e-4...')
+#8 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('933850ca-700e-4...')
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#12 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#13 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#14 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#15 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#16 {main}
+Thu May 23 17:58:01 2019 [7101][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 17:58:01 2019 [7101][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Document))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Document))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Document), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Documents', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('933850ca-700e-4...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 18:01:23 2019 [11025][1][FATAL] Mysqli_query failed.
+Thu May 23 18:01:23 2019 [11025][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( documents.document_revision_id IN (SELECT document_revisions.id FROM document_revisions
+			           WHERE document_revisions.deleted=0
+				   AND document_revisions.filename LIKE ''123'') )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '123'') )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,2' at line 3
+Thu May 23 18:01:31 2019 [11047][1][FATAL] Mysqli_query failed.
+Thu May 23 18:01:31 2019 [11047][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( name like '123%' )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'name' in 'where clause'
+Thu May 23 18:05:25 2019 [7101][1][FATAL] Mysqli_query failed.
+Thu May 23 18:05:25 2019 [7101][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( name like '123.pdf%' )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'name' in 'where clause'
+Thu May 23 18:05:32 2019 [7101][1][FATAL] Mysqli_query failed.
+Thu May 23 18:05:32 2019 [7101][1][FATAL]  Query Failed:  SELECT  documents.id , documents.document_name , documents.assigned_user_id  FROM documents  where (( documents.document_revision_id IN (SELECT document_revisions.id FROM document_revisions
+			           WHERE document_revisions.deleted=0
+				   AND document_revisions.filename LIKE ''123.pdf'') and name like '123.pdf%' )) AND documents.deleted=0 ORDER BY documents.date_entered DESC LIMIT 0,21: MySQL error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '123.pdf'') and name like '123.pdf%' )) AND documents.deleted=0 ORDER BY document' at line 3
+Thu May 23 18:18:29 2019 [11025][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Thu May 23 18:18:51 2019 [11047][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Thu May 23 18:19:23 2019 [11027][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 18:19:23 2019 [11027][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('bc3cb3c3-aae0-4...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 18:19:44 2019 [11026][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 18:19:44 2019 [11026][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(DocumentRevision))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(DocumentRevision))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(DocumentRevision), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('DocumentRevisio...', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/modules/Documents/Document.php(435): SugarBean->mark_deleted('4cd35678-115e-6...')
+#7 /var/www/html/erp/data/SugarBean.php(5243): Document->mark_relationships_deleted('4cc10401-b02c-e...')
+#8 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('4cc10401-b02c-e...')
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#12 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#13 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#14 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#15 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#16 {main}
+Thu May 23 18:19:44 2019 [11026][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 18:19:44 2019 [11026][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Document))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Document))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Document), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Documents', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('4cc10401-b02c-e...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 18:28:37 2019 [8241][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 18:28:37 2019 [8241][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Opportunity))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Opportunity))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Opportunity), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Opportunities', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('30c1e667-b779-e...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}
+Thu May 23 18:29:05 2019 [8234][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 18:29:05 2019 [8234][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(DocumentRevision))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(DocumentRevision))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(DocumentRevision), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('DocumentRevisio...', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/modules/Documents/Document.php(435): SugarBean->mark_deleted('45b65691-183c-f...')
+#7 /var/www/html/erp/data/SugarBean.php(5243): Document->mark_relationships_deleted('45a2d4bd-19e9-e...')
+#8 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('45a2d4bd-19e9-e...')
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#12 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#13 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#14 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#15 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#16 {main}
+Thu May 23 18:29:05 2019 [8234][1][FATAL] [ERROR] Failed to remove bean to index
+Thu May 23 18:29:05 2019 [8234][1][FATAL] [ERROR] SuiteCRM\Search\Exceptions\SearchException: Elasticsearch trying to re-indexing a bean but indexer is disabled in configuration. in /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php:123
+Stack trace:
+#0 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(105): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndex(Object(Document))
+#1 /var/www/html/erp/lib/Search/ElasticSearch/ElasticSearchHooks.php(92): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->reIndexSafe(Object(Document))
+#2 /var/www/html/erp/include/utils/LogicHook.php(272): SuiteCRM\Search\ElasticSearch\ElasticSearchHooks->beanDeleted(Object(Document), 'after_delete', Array)
+#3 /var/www/html/erp/include/utils/LogicHook.php(213): LogicHook->process_hooks(Array, 'after_delete', Array)
+#4 /var/www/html/erp/data/SugarBean.php(3129): LogicHook->call_custom_logic('Documents', 'after_delete', Array)
+#5 /var/www/html/erp/data/SugarBean.php(5267): SugarBean->call_custom_logic('after_delete', Array)
+#6 /var/www/html/erp/include/MassUpdate.php(286): SugarBean->mark_deleted('45a2d4bd-19e9-e...')
+#7 /var/www/html/erp/include/MVC/Controller/SugarController.php(781): MassUpdate->handleMassUpdate()
+#8 /var/www/html/erp/include/MVC/Controller/SugarController.php(525): SugarController->action_massupdate()
+#9 /var/www/html/erp/include/MVC/Controller/SugarController.php(494): SugarController->do_action()
+#10 /var/www/html/erp/include/MVC/Controller/SugarController.php(468): SugarController->handle_action()
+#11 /var/www/html/erp/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#12 /var/www/html/erp/include/MVC/SugarApplication.php(113): SugarController->execute()
+#13 /var/www/html/erp/index.php(52): SugarApplication->execute()
+#14 {main}

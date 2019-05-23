@@ -1,0 +1,26 @@
+<?php
+// created: 2019-05-21 20:45:32
+$mod_strings = array (
+  'LBL_PART_NUMBER' => 'Серийный номер',
+  'LBL_INVENTORY_NUMBER_S' => 'Инвентарный номер',
+  'LBL_RESPONSE_ENGINEER_USER_ID' => '&#039;Ответственный инженер&#039; (связано с ID модуля &#039;Пользователь&#039;)',
+  'LBL_RESPONSE_ENGINEER' => 'Ответственный инженер',
+  'LBL_NAME' => 'Название оборудования',
+  'LBL_AOS_PRODUCT_CATEGORIES' => 'Категории оборудования',
+  'LBL_AOS_PRODUCT_CATEGORY' => 'Категория оборудования (ID)',
+  'LBL_AOS_PRODUCT_CATEGORYS_NAME' => 'Категория оборудования',
+  'LBL_CUSTOMERS_PURCHASED_PRODUCTS_SUBPANEL_TITLE' => 'Оплатившие оборудование клиенты',
+  'LBL_MAINCODE' => 'Код оборудования',
+  'LBL_PRODUCTS_PURCHASES' => 'Оплатившие оборудование клиенты',
+  'LBL_PRODUCT_IMAGE' => 'Фото оборудования',
+  'LBL_TYPE' => 'Тип оборудования',
+  'LNK_NEW_RECORD' => 'Добавить оборудование',
+  'LNK_LIST' => 'Оборудование',
+  'LBL_LIST_FORM_TITLE' => 'Список товаров',
+  'LBL_SEARCH_FORM_TITLE' => 'Поиск оборудования',
+  'LBL_HOMEPAGE_TITLE' => 'Мои товары',
+  'LBL_MODULE_NAME' => 'Оборудование',
+  'LBL_MODULE_TITLE' => 'Оборудование',
+  'LBL_NEW_FORM_TITLE' => 'Новое оборудование',
+  'VALUE' => 'Название оборудования',
+);
