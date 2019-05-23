@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.31, created on 2019-05-23 17:53:24
+<?php /* Smarty version 2.6.31, created on 2019-05-23 20:30:09
          compiled from cache/themes/SuiteP/modules/Documents/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 44, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 53, false),array('function', 'counter', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 110, false),array('function', 'sugar_getimage', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 123, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 103, false),array('modifier', 'escape', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 274, false),array('modifier', 'url2html', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 274, false),array('modifier', 'nl2br', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 274, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 44, false),array('function', 'sugar_translate', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 53, false),array('function', 'counter', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 110, false),array('function', 'sugar_getimage', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 123, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 103, false),array('modifier', 'escape', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 237, false),array('modifier', 'url2html', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 237, false),array('modifier', 'nl2br', 'cache/themes/SuiteP/modules/Documents/DetailView.tpl', 237, false),)), $this); ?>
 
 
 <?php if ($this->_tpl_vars['fields']['recurring_source']['value'] != '' && $this->_tpl_vars['fields']['recurring_source']['value'] != 'Sugar'): ?>
@@ -138,10 +138,10 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_FILENAME','module' => 'Documents'), $this);?>
@@ -151,7 +151,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_inclu
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="file" field="filename"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="file" field="filename" colspan='3' >
 
 <?php if (! $this->_tpl_vars['fields']['filename']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
@@ -178,52 +178,6 @@ _image_inline.png
 <a href="<?php echo $this->_tpl_vars['fields']['doc_url']['value']; ?>
 " class="tabDetailViewDFLink" target="_blank"><?php echo smarty_function_sugar_getimage(array('name' => $this->_tpl_vars['imageName'],'alt' => $this->_tpl_vars['imageName'],'other_attributes' => 'border="0" '), $this);?>
 </a>
-<?php endif; ?>
-<?php endif; ?>
-
-<div class="inlineEditIcon col-xs-hidden">
-<span class="suitepicon suitepicon-action-edit"></span>
-</div>
-</div>
-
-
-</div>
-
-
-
-
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label col-2-label">
-
-
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_DOC_STATUS','module' => 'Documents'), $this);?>
-<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
-<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-</div>
-
-
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="enum" field="status_id"  >
-
-<?php if (! $this->_tpl_vars['fields']['status_id']['hidden']): ?>
-<?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
-
-
-
-<?php if (is_string ( $this->_tpl_vars['fields']['status_id']['options'] )): ?>
-<input type="hidden" class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['status_id']['name']; ?>
-" value="<?php echo $this->_tpl_vars['fields']['status_id']['options']; ?>
-">
-<?php echo $this->_tpl_vars['fields']['status_id']['options']; ?>
-
-<?php else: ?>
-<input type="hidden" class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['status_id']['name']; ?>
-" value="<?php echo $this->_tpl_vars['fields']['status_id']['value']; ?>
-">
-<?php echo $this->_tpl_vars['fields']['status_id']['options'][$this->_tpl_vars['fields']['status_id']['value']]; ?>
-
 <?php endif; ?>
 <?php endif; ?>
 
@@ -400,6 +354,12 @@ _image_inline.png
 </div>
 
 
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
 </div>
 
 </div>
@@ -442,10 +402,10 @@ _image_inline.png
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_FILENAME','module' => 'Documents'), $this);?>
@@ -455,7 +415,7 @@ _image_inline.png
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="file" field="filename"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="file" field="filename" colspan='3' >
 
 <?php if (! $this->_tpl_vars['fields']['filename']['hidden']): ?>
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
@@ -482,52 +442,6 @@ _image_inline.png
 <a href="<?php echo $this->_tpl_vars['fields']['doc_url']['value']; ?>
 " class="tabDetailViewDFLink" target="_blank"><?php echo smarty_function_sugar_getimage(array('name' => $this->_tpl_vars['imageName'],'alt' => $this->_tpl_vars['imageName'],'other_attributes' => 'border="0" '), $this);?>
 </a>
-<?php endif; ?>
-<?php endif; ?>
-
-<div class="inlineEditIcon col-xs-hidden">
-<span class="suitepicon suitepicon-action-edit"></span>
-</div>
-</div>
-
-
-</div>
-
-
-
-
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label col-2-label">
-
-
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_DOC_STATUS','module' => 'Documents'), $this);?>
-<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
-<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-</div>
-
-
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="enum" field="status_id"  >
-
-<?php if (! $this->_tpl_vars['fields']['status_id']['hidden']): ?>
-<?php echo smarty_function_counter(array('name' => 'panelFieldCount','print' => false), $this);?>
-
-
-
-<?php if (is_string ( $this->_tpl_vars['fields']['status_id']['options'] )): ?>
-<input type="hidden" class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['status_id']['name']; ?>
-" value="<?php echo $this->_tpl_vars['fields']['status_id']['options']; ?>
-">
-<?php echo $this->_tpl_vars['fields']['status_id']['options']; ?>
-
-<?php else: ?>
-<input type="hidden" class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['status_id']['name']; ?>
-" value="<?php echo $this->_tpl_vars['fields']['status_id']['value']; ?>
-">
-<?php echo $this->_tpl_vars['fields']['status_id']['options'][$this->_tpl_vars['fields']['status_id']['value']]; ?>
-
 <?php endif; ?>
 <?php endif; ?>
 
@@ -704,6 +618,12 @@ _image_inline.png
 </div>
 
 
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
 </div>
 
 </div>

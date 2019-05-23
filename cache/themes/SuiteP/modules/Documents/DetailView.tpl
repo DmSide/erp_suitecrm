@@ -93,10 +93,10 @@
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_FILENAME' module='Documents'}{/capture}
@@ -104,7 +104,7 @@
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="file" field="filename"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="file" field="filename" colspan='3' >
 
 {if !$fields.filename.hidden}
 {counter name="panelFieldCount" print=false}
@@ -121,43 +121,6 @@
 {$fields.doc_type.value}_image_inline.png
 {/capture}
 <a href="{$fields.doc_url.value}" class="tabDetailViewDFLink" target="_blank">{sugar_getimage name=$imageName alt=$imageName other_attributes='border="0" '}</a>
-{/if}
-{/if}
-
-<div class="inlineEditIcon col-xs-hidden">
-<span class="suitepicon suitepicon-action-edit"></span>
-</div>
-</div>
-
-
-</div>
-
-
-
-
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label col-2-label">
-
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_DOC_STATUS' module='Documents'}{/capture}
-{$label|strip_semicolon}:
-</div>
-
-
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="enum" field="status_id"  >
-
-{if !$fields.status_id.hidden}
-{counter name="panelFieldCount" print=false}
-
-
-{if is_string($fields.status_id.options)}
-<input type="hidden" class="sugar_field" id="{$fields.status_id.name}" value="{ $fields.status_id.options }">
-{ $fields.status_id.options }
-{else}
-<input type="hidden" class="sugar_field" id="{$fields.status_id.name}" value="{ $fields.status_id.value }">
-{ $fields.status_id.options[$fields.status_id.value]}
 {/if}
 {/if}
 
@@ -314,6 +277,12 @@
 </div>
 
 
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
 </div>
 
 </div>
@@ -355,10 +324,10 @@
 
 
 
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
+<div class="col-xs-12 col-sm-12 detail-view-row-item">
 
 
-<div class="col-xs-12 col-sm-4 label col-1-label">
+<div class="col-xs-12 col-sm-2 label col-1-label">
 
 
 {capture name="label" assign="label"}{sugar_translate label='LBL_FILENAME' module='Documents'}{/capture}
@@ -366,7 +335,7 @@
 </div>
 
 
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="file" field="filename"  >
+<div class="col-xs-12 col-sm-10 detail-view-field inlineEdit" type="file" field="filename" colspan='3' >
 
 {if !$fields.filename.hidden}
 {counter name="panelFieldCount" print=false}
@@ -383,43 +352,6 @@
 {$fields.doc_type.value}_image_inline.png
 {/capture}
 <a href="{$fields.doc_url.value}" class="tabDetailViewDFLink" target="_blank">{sugar_getimage name=$imageName alt=$imageName other_attributes='border="0" '}</a>
-{/if}
-{/if}
-
-<div class="inlineEditIcon col-xs-hidden">
-<span class="suitepicon suitepicon-action-edit"></span>
-</div>
-</div>
-
-
-</div>
-
-
-
-
-<div class="col-xs-12 col-sm-6 detail-view-row-item">
-
-
-<div class="col-xs-12 col-sm-4 label col-2-label">
-
-
-{capture name="label" assign="label"}{sugar_translate label='LBL_DOC_STATUS' module='Documents'}{/capture}
-{$label|strip_semicolon}:
-</div>
-
-
-<div class="col-xs-12 col-sm-8 detail-view-field inlineEdit" type="enum" field="status_id"  >
-
-{if !$fields.status_id.hidden}
-{counter name="panelFieldCount" print=false}
-
-
-{if is_string($fields.status_id.options)}
-<input type="hidden" class="sugar_field" id="{$fields.status_id.name}" value="{ $fields.status_id.options }">
-{ $fields.status_id.options }
-{else}
-<input type="hidden" class="sugar_field" id="{$fields.status_id.name}" value="{ $fields.status_id.value }">
-{ $fields.status_id.options[$fields.status_id.value]}
 {/if}
 {/if}
 
@@ -576,6 +508,12 @@
 </div>
 
 
+</div>
+
+
+
+
+<div class="col-xs-12 col-sm-6 detail-view-row-item">
 </div>
 
 </div>
