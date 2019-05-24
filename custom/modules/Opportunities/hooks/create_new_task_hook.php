@@ -197,8 +197,8 @@ class create_new_task_hook
                                     \nМагазин: $bean->account_name
                                     \nДата выполнения работ: $bean->date_closed
                                     \nСтадия согласования документов: $sales_stage_ru
-                                    \nДокументы:: $bean->opportunities_documents_c
-                                    \nОписание:: $bean->description", 900);
+                                    \nДокументы: $bean->opportunities_documents_c
+                                    \nОписание: $bean->description", 900);
             //№$mail->isHTML(true); // set to true if content has html tags
             $mail->prepForOutbound();
             $mail->setMailerForSystem();
@@ -258,13 +258,12 @@ class create_new_task_hook
                                     \nМагазин: $bean->account_name
                                     \nДата выполнения работ: $bean->date_closed
                                     \nСтадия согласования документов: $sales_stage_ru
-                                    \nДокументы:: $bean->opportunities_documents_c
-                                    \nОписание:: $bean->description", 900);
+                                    \nДокументы: $bean->opportunities_documents_c
+                                    \nОписание: $bean->description", 900);
                 //№$mail->isHTML(true); // set to true if content has html tags
                 $mail->prepForOutbound();
                 $mail->setMailerForSystem();
                 //Send mail, log if there is error
-                $GLOBALS['log']->fatal($mail->Body);
                 if (!$mail->Send()) {
                     $GLOBALS['log']->fatal("ERROR: Mail sending failed!");
                 }
@@ -276,8 +275,8 @@ class create_new_task_hook
                                     \nМагазин: '{$bean->account_name}'
                                     \nДата выполнения работ: '{$bean->date_closed}'
                                     \nСтадия согласования документов: '{$sales_stage_ru}'
-                                    \nДокументы:: $bean->opportunities_documents_c
-                                    \nОписание:: $bean->description";
+                                    \nДокументы: $bean->opportunities_documents_c
+                                    \nОписание: $bean->description";
 //        $dbInsertNewTask = DBManagerFactory::getInstance();
 //        $queryInsertNewTask = "INSERT INTO tasks (
 //                                    id, name, created_by, assigned_user_id, status, deleted, description,
